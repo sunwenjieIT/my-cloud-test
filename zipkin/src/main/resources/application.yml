@@ -1,0 +1,22 @@
+server:
+  port: 9411
+spring:
+  application:
+    name: zipkin-server
+  sleuth:
+    sampler:
+      percentage: 1
+#  sleuth:
+#    enabled: false
+
+#  datasource:
+#    schema: classpath:/test.sql
+#    username: root
+#    url: jdbc:mysql://localhost:3306/zipkin
+#    initialize: true
+#    continue-on-error: true
+#    password: root
+#
+#zipkin:
+#  storage:
+#    type: mysql

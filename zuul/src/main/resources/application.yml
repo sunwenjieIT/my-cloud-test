@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: zuul
+
+server:
+  port: 9000
+
+zuul:
+  routes:
+    service-b:
+      path: /service/**
+      strip-prefix: true
+    service-a:
+      path: /
+      strip-prefix: true
+#      serviceId: service-a
+#      url: http://localhost:8082/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
