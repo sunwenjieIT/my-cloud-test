@@ -17,7 +17,7 @@ public class DemoApplication {
 	@GetMapping(value = "hello")
 	String hello() {
 
-		return "hello spring cloud.";
+		return "hello spring cloud. version 2.";
 	}
 
 }
